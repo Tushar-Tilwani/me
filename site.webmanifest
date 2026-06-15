@@ -1,0 +1,18 @@
+{
+  "name": "Tushar Tilwani — Frontend / Full Stack Software Engineer",
+  "short_name": "Tushar Tilwani",
+  "description": "Frontend / Full Stack Software Engineer with 13+ years at eBay, Oracle Cloud, and Amazon. React, TypeScript, observability, and web performance.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d111c",
+  "theme_color": "#0d111c",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

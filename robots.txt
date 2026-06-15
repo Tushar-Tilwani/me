@@ -1,0 +1,6 @@
+# Allow all crawlers, including AI answer engines (GPTBot, ClaudeBot, PerplexityBot,
+# Google-Extended, etc.). Nothing here is private.
+User-agent: *
+Allow: /
+
+Sitemap: https://tushar-tilwani.github.io/me/sitemap.xml
