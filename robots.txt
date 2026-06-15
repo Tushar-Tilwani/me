@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tushar-tilwani.github.io/me/sitemap.xml
+Sitemap: https://www.tushar.me/sitemap.xml

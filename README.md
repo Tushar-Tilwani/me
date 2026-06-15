@@ -4,7 +4,7 @@ A fast, static personal website positioning **Tushar Tilwani** as a **Frontend /
 Software Engineer** with big-tech experience at **eBay, Oracle Cloud, and Amazon**. Built for
 strong SEO and AI-search visibility (Google, ChatGPT, Claude, Gemini, Copilot, Perplexity).
 
-**Live URL (GitHub Pages):** https://tushar-tilwani.github.io/me/
+**Live URL:** https://www.tushar.me/ (custom domain via GitHub Pages)
 
 ## Stack
 
@@ -71,28 +71,30 @@ This repo's remote is already `https://github.com/Tushar-Tilwani/me`. To publish
 2. On GitHub: **Settings → Pages → Build and deployment**.
    - **Source:** *Deploy from a branch*
    - **Branch:** `main` · **Folder:** `/ (root)`
-3. Save. The site publishes at **https://tushar-tilwani.github.io/me/** within a minute or two.
+3. Save. With the `CNAME` file present and DNS configured (below), the site publishes at
+   **https://www.tushar.me/** within a minute or two.
 
-### Optional: custom domain
+### Custom domain (active)
 
-If you later add a custom domain (e.g. `tushartilwani.com`):
+The site uses the custom domain **www.tushar.me**, configured via the `CNAME` file at the repo root.
+To make it resolve and stay secure:
 
-1. Add a `CNAME` file at the repo root containing just the domain.
-2. Configure DNS per GitHub's instructions, and set the domain under **Settings → Pages**.
-3. **Update the canonical URL** everywhere it appears — see the note below.
+1. In your DNS provider, add a `CNAME` record: `www` → `tushar-tilwani.github.io`.
+2. In **Settings → Pages**, confirm the custom domain `www.tushar.me` and enable **Enforce HTTPS**.
+3. All site URLs (canonical, Open Graph, sitemap, JSON-LD) already point to `https://www.tushar.me/`.
 
 ## ⚠️ Canonical URL — single source to update
 
-The canonical/site URL `https://tushar-tilwani.github.io/me/` is hard-coded in a few places. If you
-move to a custom domain or rename the repo, update it in **all** of these so search engines and
-social previews stay consistent:
+The canonical/site URL `https://www.tushar.me/` is hard-coded in a few places. If you ever change
+the domain or rename the repo, update it in **all** of these so search engines and social previews
+stay consistent:
 
 - `index.html` — `<link rel="canonical">`, all `og:*`/`twitter:*` URL + image tags, and every
   `url`/`@id`/`image` field inside the JSON-LD `<script type="application/ld+json">` block.
 - `robots.txt` — the `Sitemap:` line.
 - `sitemap.xml` — the `<loc>` value.
 
-A quick find-and-replace of `tushar-tilwani.github.io/me` covers it.
+A quick find-and-replace of `www.tushar.me` covers it.
 
 ## SEO & AI-search notes
 
